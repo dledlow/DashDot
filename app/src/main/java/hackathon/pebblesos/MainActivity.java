@@ -81,6 +81,8 @@ public class MainActivity extends ActionBarActivity {
                     TextView tv = (TextView)findViewById(R.id.text_messages);
                     tv.append("You: " + txt + "\n");
 
+                    textIn.setText("");
+
                     //Toast.makeText(context, txt, Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(context, "Watch is not connected!", Toast.LENGTH_LONG).show();

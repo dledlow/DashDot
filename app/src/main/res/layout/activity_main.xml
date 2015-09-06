@@ -16,32 +16,39 @@
         android:layout_below="@id/text_view"
         android:text="Launch Watch App"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#00c4ff" />
 
     <EditText
         android:id="@+id/text_input"
-        android:layout_below="@id/launch_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:inputType="text"
+        android:layout_above="@+id/send_button"
+        android:layout_centerHorizontal="true"
+        android:background="#c7c7c7"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/send_button"
         android:text="send message"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_input"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="#72ec00"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/text_messages"
         android:text=""
-        android:layout_below="@id/send_button"
         android:layout_width="fill_parent"
         android:maxLines = "20"
         android:scrollbars = "vertical"
         android:gravity="bottom"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf"
+        android:layout_below="@+id/launch_button"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text_input" />
 
 </RelativeLayout>
